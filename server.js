@@ -20,6 +20,12 @@ const server = http.createServer((req, res) => {
     })
   }
 
+  function sendRandomNum() {
+    let randomNum = Math.ceil(Math.random() * 2);
+    res.writeHead(200, { 'Content-Type': 'application/json' })
+    res.end(JSONIFY({randomNum}));
+  }
+
   const reqURL = url.parse(req.url)
   const page = reqURL.pathname;
   const params = querystring.parse(reqURL.query);
@@ -28,6 +34,9 @@ const server = http.createServer((req, res) => {
   switch (page) {
     case '/': 
     readWrite('assets/index.html', 'text/html');
+    break;
+    case '/api':
+
   }
 })
 
