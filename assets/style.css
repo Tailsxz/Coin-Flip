@@ -1,0 +1,21 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#coin {
+  width: 7rem;
+  padding: 1rem;
+  margin-block: 2rem;
+  margin-inline: auto;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 4px 25px -10px rgba(0, 0, 0, .4);
+}
+
+#result {
+  font-weight: bold;
+  font-size: 1rem;
+  opacity: 0;
+}
+

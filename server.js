@@ -30,8 +30,6 @@ const server = http.createServer((req, res) => {
   const reqURL = url.parse(req.url)
   const page = reqURL.pathname;
   const params = querystring.parse(reqURL.query);
-  console.log(params);
-
   switch (page) {
     case '/': 
       readWrite('assets/index.html', 'text/html');

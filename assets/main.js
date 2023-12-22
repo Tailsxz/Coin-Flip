@@ -11,7 +11,8 @@ async function fetchRandomNum(url) {
   if (!response.ok) throw new Error(`Failed request with status code of ${response.status}`);
 
   const data = await response.json();
-  resultMessage.textContent = `${data.randomNum > 1 ? 'Heads!' : 'Tails'}`;
+  resultMessage.textContent = `${data.randomNum > 1 ? 'Heads!' : 'Tails!'}`;
+  resultMessage.style = 'opacity: 1;'
 }
 
 flipButton.addEventListener('click', () => {
