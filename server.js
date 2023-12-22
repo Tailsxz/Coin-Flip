@@ -23,6 +23,7 @@ const server = http.createServer((req, res) => {
   function sendRandomNum() {
     let randomNum = Math.ceil(Math.random() * 2);
     res.writeHead(200, { 'Content-Type': 'application/json' })
+    console.log(randomNum);
     res.end(JSONIFY({randomNum}));
   }
 
@@ -33,10 +34,22 @@ const server = http.createServer((req, res) => {
 
   switch (page) {
     case '/': 
-    readWrite('assets/index.html', 'text/html');
-    break;
+      readWrite('assets/index.html', 'text/html');
+      break;
+    case '/assets/normalize.css':
+      readWrite('assets/normalize.css', 'text/css');
+      break;
+    case '/assets/style.css':
+      readWrite('assets/style.css', 'text/css');
+      break;
+    case '/assets/main.js':
+      readWrite('assets/main.js', 'text/javascript');
+      break;
     case '/api':
-
+      sendRandomNum();
+      break;
+    default:
+      readWrite('assets/404.html', 'text/html');
   }
 })
 
