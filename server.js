@@ -23,7 +23,6 @@ const server = http.createServer((req, res) => {
   function sendRandomNum() {
     let randomNum = Math.ceil(Math.random() * 2);
     res.writeHead(200, { 'Content-Type': 'application/json' })
-    console.log(randomNum);
     res.end(JSONIFY({randomNum}));
   }
 
