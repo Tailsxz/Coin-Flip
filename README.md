@@ -20,4 +20,4 @@ To get a copy of this project, you can fork the repo then clone it as your own.
 [Clone the Repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 ### Knowledge gained from this project
-Further solidification on what the core node modules fs, http, url, querystring, and path provide. First time setting filler text within a textbox, hiding it from initial view to prevent CLS when the result of the flip has been generated and the textbox was updated.
+Further solidification on what the core node modules fs, http, url, querystring, and path provide. First time setting filler text within a textbox, hiding it from initial view to prevent CLS when the result of the flip has been generated and the textbox was updated. Since this project was mainly for learning and getting used to the core modules, I also experimented with the events module, creating my first EventEmitter. Then i emitted my first event and attached a listener to it!
