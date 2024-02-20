@@ -1,5 +1,4 @@
-# Project Title
-Coin Flip
+# Coin Flipper
 
 [Live Site]()
 
